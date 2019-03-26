@@ -1,5 +1,6 @@
 body{
-    background: yellow;
+    background-image:url(img.jpeg);
+    border: black
 }
 table{
     background: gray;
