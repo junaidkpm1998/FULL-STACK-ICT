@@ -1,0 +1,7 @@
+a=int(input("enter a num:"))
+#b=int(input("enter 2nd num"))
+if a%2==0:
+	print "even"
+else:
+	print "odd"
+

@@ -1,0 +1,18 @@
+a=int(input("enter a num:"))
+b=int(input("enter second num:"))
+if a>b:
+	print "1st num gratest"
+else:
+	print "2nd num: is big"
+
+
+a=int(input("enter a num:"))
+b=int(input("enter second num:"))
+c=int(input("enter 3rd num:"))
+if a>b & a>c:
+	print(a"1st num is gratest")
+elif b>a & b>c:
+	print(b"2nd num is graest")
+else:
+	print(c"3rd num is gratest")
+

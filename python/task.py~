@@ -1,0 +1,10 @@
+#a=raw_input("enter your name")
+#print a
+#b= raw_input("enter your age")
+#print b
+b= raw_input("enter your mark")
+print b
+c=string(input("age"))
+print c
+
+

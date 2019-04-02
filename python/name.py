@@ -1,0 +1,1 @@
+print "junaid\nkpm\nhello"
