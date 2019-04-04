@@ -1,0 +1,11 @@
+
+a=raw_input("ener string").upper()
+b=0
+#print str.count("i",0,40)
+#print "wow occur in",str.count("wow")
+if i in a:
+	if i=="AEIOU":
+		b=b+1
+		
+#print "words  occur in",str.count(' ')
+
