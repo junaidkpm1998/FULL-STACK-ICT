@@ -1,6 +1,6 @@
 const mymodule=require('./addmodule')
-var x=100;
-var y=50;
+var x=60;
+var y=150;
 var z=mymodule.addnum(x,y);
 console.log(z);
 var k=mymodule.subnum(x,y);
