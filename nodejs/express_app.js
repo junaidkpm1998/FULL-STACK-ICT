@@ -26,8 +26,21 @@ app.post('/getdata', (req, res) => {
   // console.log(email)
     //res.send(req.body)
 });
+app.post('/login',(req,res)=>{
+    var user=req.body.username;
+    var pass=req.body.password;
+    if(user==admin && pass==1234)
+    {
+        res.send("successes")
+    }
+    else{
+        res.send("failed")
+    }
+
+})
+
 app.get('/', (req, res) => {
-    res.render('index')
+    res.render('index',{name:'JUNAID KPM'});
     //app.get('/',(req,res)=>{
     // res.send('[{"name":"junaid","age":21},{"name":"arjun","age":24}]')
     // res.send("<marquee><b>u r welcome</b></marquee>")
@@ -48,4 +61,6 @@ app.get('/gallery', (req, res) => {
 
 });
 
-app.listen(3002)//local host:(/)3000 chromeil adikkuka
+app.listen(process.env.PORT || 3002,()=>{
+    console.log("web application is running successfully")
+})//local host:(/)3000 chromeil adikkuka
