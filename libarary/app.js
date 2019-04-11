@@ -2,6 +2,7 @@ const express=require('express')
 const chalk=require('chalk');
 const path=require('path');
 const booksRouter=express.Router();
+const authorRouter=express.Router();
 
 var app=express();
 app.set('views','./src/views');
@@ -40,6 +41,21 @@ app.get('/',(req,res)=>{
         
     });
 });
-app.listen(3009,()=>{
+
+authorRouter.route('/')
+.get((req,res)=>{
+    res.render('authors',{
+        nav:[
+            {link:'/books',title:'Books'},
+            {link:'/authors',title:'Authors'}
+
+        ],
+        title:"Author"
+        
+    });
+});
+
+app.use('/authors',authorRouter);
+app.listen(3000,()=>{
     console.log('listening to port'+chalk.green('3009'));
 });
